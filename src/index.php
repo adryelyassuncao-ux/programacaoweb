@@ -17,42 +17,49 @@
         </fieldset>
     </div>  -->
 
-    <form method="get">
-
-        <h1>Tabuada</h1>
-
-        <label for="tab">Tabuada: </label>
-        <input type="number" name="tab">
-        <br><br>
-        
-        <label for="txt_tab">Início:</label>
+  <fieldset style="max-width: 50%; margin: 0 auto;">
+      <legent>Tabuada dinâmica</legend>
+      <form method="get">
+        <label for="">Início</label>
+        <input type="number" name="txt_inicio">
+        <br>
+        <label for="">Fim</label>
+        <input type="number" name="txt_fim">
+        <br>
+        <label for="">Tabuada</label>
         <input type="number" name="txt_tab">
-
-         <label for="txt_tab2">Termino:</label>
-        <input type="number" name="txt_tab2">
-        
-        <input type ="submit" value="Enviar">
-
-        
-
+        <br>
+        <input type="submit" name="btn_calc" value="Calcular">
     </form>
+</fieldset>
     
     <?php
     
-        // $nome = $_GET['txtNome'];
-        // echo "<h1>Seja bem vindo Sr(a). " . $nome . "</h1>";
+     
 
-        if(isset($_GET["txt_tab"])){
+        if(isset($_GET['btn_calc'])){
+            $inicio = $_GET['txt_inicio'];
+            $fim = $_GET['txt_fim'];
             $tab = $_GET['txt_tab'];
-            $tab2 = $_GET['txt_tab2'];
-            $tab3 = $_GET['tab'];
-        
-            echo '<h1> Tabuada do ' . $tab3 . ' ser construída do ' . $tab .  " até o " . $tab2 . "</h1>";
 
-            for($x = $tab; $x <= $tab2; $x++){
-                $result = $tab3 * $x;
-                echo "<p>{$tab3} x {$x} = <span style='color:purple;'>{$result}</span></p>";
+            for($i = $inicio; $i <= $fim; $i++){
+                $result = $i * $tab;
+                echo "<h3>{$i} x {$tab} = {$result}</h3>";
             }
+
+            echo '<h1>Utilizando o while </h1>';
+            while($inicio <= $fim){
+            $result = $inicio * $tab;
+            echo "<h3> {$inicio} x {$tab} = {$result} </h3>\n";
+            $inicio++;
+            }
+            echo '<h1>Utilizando "do while" </h1>';
+            do{
+              $result = $inicio * $tab;
+              echo "<h3>{$inicio} x {stab} = {$result}</h3>\n";
+              $inicio++;
+
+            }while($inicio < $fim);
         }
 
            
