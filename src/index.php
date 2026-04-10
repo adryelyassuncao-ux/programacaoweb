@@ -36,32 +36,23 @@
     </style>
 </head>
 <body>
-<div class="card" style="width: 18rem;">
-  <img src="https://imgcentauro-a.akamaihd.net/900x900/88268831/top-fitness-nike-victory-shape-h-s-adulto-img.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
 
-
-    <div class="container">
+ <div class="container">
         <div class="imagens">
             <?php
-                include 'dados_imagens.php'; //require 
+                include 'lista_produtos.php'; //require 
                 foreach ($produtos as $item) {
-                    echo 
+                    echo '
                         <div class="card" style="width: 18rem;">
-                        <img src="https://imgcentauro-a.akamaihd.net/900x900/88268831/top-fitness-nike-victory-shape-h-s-adulto-img.jpg" class="card-img-top" alt="...">
+                        <img src="' . $item["Imagem"] . '" class="card-img-top" alt="' . $item["Nome"] . '">
                         <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">' . $item["Nome"] . '</h5>
+                        <p class="card-text">' . $item["Descrição"] . '</p>
+                        <p><strong>' . $item["Valor"] . '</strong></p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
-</div>
-
-                    
+                        </div>
+                    ';
                 }
             ?>
         </div>
