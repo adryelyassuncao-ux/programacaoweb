@@ -1,5 +1,7 @@
 <?php
+    require_once 'helpers.php';
 
+    date_default_timezone_set('America/Sao_Paulo');
 /*function somar_v1(): float{
     $resultado = 10 + 10;
     return $resultado;
@@ -124,5 +126,46 @@ function MaiorIdade (array $pessoas): array
     }
   return $maioridade;
 }
+//Atividade¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 
 
+//exercicio 8
+
+$noticias = [
+    [
+        "Titulo" => "Tecnologia no Brasil",
+        "Noticia" => "texto da noticia"
+        "slug" => "noticia-do-do",
+    
+    ]
+]
+
+function montarVitrineNoticias(){
+    
+} 
+
+//exercicio 9
+
+function GerarBoletimRapido ($notas)
+{  
+    $media = CalcularMedia($notas["nome_do_aluno"]);
+    criarArrayAssociativo(["nome_do_aluno", "media_formatada", "situacao"]);
+}
+
+
+//exercicio 10
+
+function resumoEvento ($nomeEvento, $dataEventoBr)
+{
+    $dataBR = converterDataParaBD($dataEventoBR);
+    $diferenca = diferencaDias(date(), $dataBR);
+    
+    return '<p>EVENTO: ' . CapitalizarPalavras($nomeEvento) . '| DATA: ' . dataExtenso($dataBR) . '| DIAS: ' . $diferenca . '</p>';
+
+}
+
+//exercicio 11
+
+function higienizarCadastros($usuarios){
+
+}
