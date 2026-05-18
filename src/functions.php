@@ -89,5 +89,40 @@ function UltimoNome (string $nome): string
     return end($partes);
 }
 
+function TempoLeitura (string $texto, int $palavrasporminuto = 200): int
+{
+    $textolimpo = strip_tags($texto);
+    $totalpalavras = str_word_count($textolimpo);
+    $minutos = ceil($totalpalavras / $palavrasporminuto);
+    return $minutos > 0 ? (int)$minutos : 1;
+}
+
+function AnoBissexto (int $ano) : bool
+{
+ if ($ano % 400 == 0)
+ {
+  return true;
+ }
+ if ($ano % 100 == 0)
+ {
+   return false;
+ }
+ if($ano % 4 == 0)
+ {
+    return true;
+ }
+}
+
+function MaiorIdade (array $pessoas): array
+{
+    $maioridade = [];
+
+    foreach($pessoass as $pessoa){
+        if ($pessoa['idade'] >= 18){
+            $maioridade[] = $pessoa;
+        }
+    }
+  return $maioridade;
+}
 
 
