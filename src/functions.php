@@ -131,14 +131,6 @@ function MaiorIdade (array $pessoas): array
 
 //exercicio 8
 
-$noticias = [
-    [
-        "Titulo" => "Tecnologia no Brasil",
-        "Noticia" => "texto da noticia"
-        "slug" => "noticia-do-do",
-    
-    ]
-]
 
 function montarVitrineNoticias(){
     
@@ -168,4 +160,11 @@ function resumoEvento ($nomeEvento, $dataEventoBr)
 
 function higienizarCadastros($usuarios){
 
+}
+
+
+//exercício 13
+function gerarRelatorioAnonimizado($contatos)
+{
+    
 }
