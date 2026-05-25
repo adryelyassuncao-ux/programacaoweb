@@ -33,10 +33,10 @@ array(
   "Mercado de Jogos" => "mercado-de-jogos"
 )
 */
-function montarVitrineNoticias($titulos)
-{
-    // TODO: implementar
-}
+// function montarVitrineNoticias($titulos)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 9 - BOLETIM RAPIDO DA TURMA
@@ -57,10 +57,10 @@ Regras:
   media < 5.0 => "Reprovado"
 - Formate a media com 1 casa decimal usando number_format(..., 1, ',', '.').
 */
-function gerarBoletimRapido($notas)
-{
-    // TODO: implementar
-}
+// function gerarBoletimRapido($notas)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 10 - CONTAGEM REGRESSIVA DE EVENTO
@@ -80,10 +80,10 @@ Regras:
 - O nome deve sair com capitalizarPalavras().
 - A data deve sair com dataExtenso().
 */
-function resumoEvento($nomeEvento, $dataEventoBr)
-{
-    // TODO: implementar
-}
+// function resumoEvento($nomeEvento, $dataEventoBr)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 11 - HIGIENIZACAO DE CADASTROS
@@ -102,10 +102,10 @@ Regras:
 - Em cada usuario valido, incluir chave extra: slug_nome.
   (gerado com criarSlug($nome_formatado))
 */
-function higienizarCadastros($usuarios)
-{
-    // TODO: implementar
-}
+// function higienizarCadastros($usuarios)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 12 - TAGS DE PRODUTOS
@@ -124,10 +124,10 @@ Regras:
 - Capitalizar cada tag com capitalizarPrimeira().
 - Retornar string final separada por " | ".
 */
-function gerarTagsProduto($textoTags)
-{
-    // TODO: implementar
-}
+// function gerarTagsProduto($textoTags)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 13 - RELATORIO ANONIMIZADO
@@ -144,11 +144,11 @@ Regras:
 - Nome em formato capitalizado por palavras.
 - Email mascarado com mascararDado(..., "email").
 - Telefone mascarado com mascararDado(..., "telefone").
-*/
-function gerarRelatorioAnonimizado($contatos)
-{
-    // TODO: implementar
-}
+// */
+// function gerarRelatorioAnonimizado($contatos)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 14 - SORTEIO DE DUPLAS
@@ -168,10 +168,10 @@ Regras:
   "Dupla 2: Nome C e Nome D"
   "Dupla 3: Nome E, Nome F e Nome G"
 */
-function sortearDuplas($alunos)
-{
-    // TODO: implementar
-}
+// function sortearDuplas($alunos)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 15 - PAINEL DE LINKS VALIDOS
@@ -190,10 +190,10 @@ Regras:
   url => slug_do_titulo
 - O slug deve ser gerado com criarSlug().
 */
-function painelLinksValidos($links)
-{
-    // TODO: implementar
-}
+// function painelLinksValidos($links)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 16 - RESUMO FINANCEIRO
@@ -211,10 +211,10 @@ Regras:
   total, maior, menor
 - Todos os valores devem estar formatados com formatarMoeda().
 */
-function resumoFinanceiro($lancamentos)
-{
-    // TODO: implementar
-}
+// function resumoFinanceiro($lancamentos)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // EXERCICIO 17 - ORGANIZADOR DE ARQUIVOS
@@ -232,10 +232,10 @@ Regras:
   tamanho_legivel (formatarTamanhoArquivo)
 - Retornar novo array com os dados transformados.
 */
-function organizarArquivos($arquivos)
-{
-    // TODO: implementar
-}
+// function organizarArquivos($arquivos)
+// {
+//     // TODO: implementar
+// }
 
 // ============================================================================
 // OBSERVACAO

@@ -7,8 +7,14 @@
 </head>
 <body>
     <?php
-        require 'helpers.php';
-        
+        include 'exercicios.php';
+
+        $alunos = ["Ana", "Bruno", "ADryelyu", "Kyara" ,"Kayke"];
+
+        echo "<h2> Exercicio 9 </h2>";
+        echo "Média Situação: " . var_dump(sortearDuplas($alunos)); 
+
+
     ?>
 </body>
 </html>
